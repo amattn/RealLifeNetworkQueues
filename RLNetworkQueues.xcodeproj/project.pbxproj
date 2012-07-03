@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A2061E9153504C500CFB1FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2061E8153504C500CFB1FB /* UIKit.framework */; };
+		2A2061EB153504C500CFB1FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2061EA153504C500CFB1FB /* Foundation.framework */; };
+		2A2061ED153504C500CFB1FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2061EC153504C500CFB1FB /* CoreGraphics.framework */; };
+		2A2061F3153504C500CFB1FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A2061F1153504C500CFB1FB /* InfoPlist.strings */; };
+		2A2061F5153504C500CFB1FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2061F4153504C500CFB1FB /* main.m */; };
+		2A2061FA153504C500CFB1FB /* RLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2061F9153504C500CFB1FB /* RLAppDelegate.m */; };
+		2A2061FE153504C500CFB1FB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2061FC153504C500CFB1FB /* MainStoryboard.storyboard */; };
+		2A206202153504C500CFB1FB /* RLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A206201153504C500CFB1FB /* RLViewController.m */; };
+		2A20620A153504C500CFB1FB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A206209153504C500CFB1FB /* SenTestingKit.framework */; };
+		2A20620B153504C500CFB1FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2061E8153504C500CFB1FB /* UIKit.framework */; };
+		2A20620C153504C500CFB1FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2061EA153504C500CFB1FB /* Foundation.framework */; };
+		2A206214153504C500CFB1FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A206212153504C500CFB1FB /* InfoPlist.strings */; };
+		2A206217153504C500CFB1FB /* RLNetworkQueuesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A206216153504C500CFB1FB /* RLNetworkQueuesTests.m */; };
+		2A51D735155D2A6F00341E5F /* RLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D722155D2A6F00341E5F /* RLConnection.m */; };
+		2A51D736155D2A6F00341E5F /* RLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D722155D2A6F00341E5F /* RLConnection.m */; };
+		2A51D737155D2A6F00341E5F /* RLConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D724155D2A6F00341E5F /* RLConnectionManager.m */; };
+		2A51D738155D2A6F00341E5F /* RLConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D724155D2A6F00341E5F /* RLConnectionManager.m */; };
+		2A51D739155D2A6F00341E5F /* RLFIFOQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D727155D2A6F00341E5F /* RLFIFOQueue.m */; };
+		2A51D73A155D2A6F00341E5F /* RLFIFOQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D727155D2A6F00341E5F /* RLFIFOQueue.m */; };
+		2A51D73C155D2A6F00341E5F /* RLFIFOQueueTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D728155D2A6F00341E5F /* RLFIFOQueueTestCase.m */; };
+		2A51D741155D2A6F00341E5F /* RLLIFOQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D72D155D2A6F00341E5F /* RLLIFOQueue.m */; };
+		2A51D742155D2A6F00341E5F /* RLLIFOQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D72D155D2A6F00341E5F /* RLLIFOQueue.m */; };
+		2A51D744155D2A6F00341E5F /* RLLIFOQueueTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D72E155D2A6F00341E5F /* RLLIFOQueueTestCase.m */; };
+		2A51D745155D2A6F00341E5F /* RLRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D731155D2A6F00341E5F /* RLRequestManager.m */; };
+		2A51D746155D2A6F00341E5F /* RLRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D731155D2A6F00341E5F /* RLRequestManager.m */; };
+		2A51D748155D2A6F00341E5F /* RLRequestManagerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D732155D2A6F00341E5F /* RLRequestManagerTestCase.m */; };
+		2A51D74C155D328000341E5F /* RLTestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D74A155D328000341E5F /* RLTestRequest.m */; };
+		2A51D74F155D349000341E5F /* RLNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D74E155D349000341E5F /* RLNetworkRequest.m */; };
+		2A51D750155D349000341E5F /* RLNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D74E155D349000341E5F /* RLNetworkRequest.m */; };
+		2A9047F315350793002AE3C9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A206209153504C500CFB1FB /* SenTestingKit.framework */; };
+		2A9047F415350793002AE3C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2061E8153504C500CFB1FB /* UIKit.framework */; };
+		2A9047F515350793002AE3C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2061EA153504C500CFB1FB /* Foundation.framework */; };
+		2A9047FB15350794002AE3C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9047F915350794002AE3C9 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A20620D153504C500CFB1FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A2061DB153504C500CFB1FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A2061E3153504C500CFB1FB;
+			remoteInfo = RLNetworkQueues;
+		};
+		2A90480515350856002AE3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A2061DB153504C500CFB1FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A9047F115350793002AE3C9;
+			remoteInfo = AutoTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A2061E4153504C500CFB1FB /* RLNetworkQueues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLNetworkQueues.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2061E8153504C500CFB1FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A2061EA153504C500CFB1FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A2061EC153504C500CFB1FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A2061F0153504C500CFB1FB /* RLNetworkQueues-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RLNetworkQueues-Info.plist"; sourceTree = "<group>"; };
+		2A2061F2153504C500CFB1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A2061F4153504C500CFB1FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A2061F6153504C500CFB1FB /* RLNetworkQueues-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLNetworkQueues-Prefix.pch"; sourceTree = "<group>"; };
+		2A2061F7153504C500CFB1FB /* PrecompiledGlobalUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrecompiledGlobalUtilities.h; sourceTree = "<group>"; };
+		2A2061F8153504C500CFB1FB /* RLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RLAppDelegate.h; path = Source/RLAppDelegate.h; sourceTree = "<group>"; };
+		2A2061F9153504C500CFB1FB /* RLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RLAppDelegate.m; path = Source/RLAppDelegate.m; sourceTree = "<group>"; };
+		2A2061FD153504C500CFB1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Resources/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2A206200153504C500CFB1FB /* RLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RLViewController.h; path = Source/View/RLViewController.h; sourceTree = "<group>"; };
+		2A206201153504C500CFB1FB /* RLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RLViewController.m; path = Source/View/RLViewController.m; sourceTree = "<group>"; };
+		2A206208153504C500CFB1FB /* RLNetworkQueuesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RLNetworkQueuesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A206209153504C500CFB1FB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2A206211153504C500CFB1FB /* RLNetworkQueuesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RLNetworkQueuesTests-Info.plist"; sourceTree = "<group>"; };
+		2A206213153504C500CFB1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A206215153504C500CFB1FB /* RLNetworkQueuesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLNetworkQueuesTests.h; sourceTree = "<group>"; };
+		2A206216153504C500CFB1FB /* RLNetworkQueuesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLNetworkQueuesTests.m; sourceTree = "<group>"; };
+		2A51D721155D2A6F00341E5F /* RLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLConnection.h; sourceTree = "<group>"; };
+		2A51D722155D2A6F00341E5F /* RLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLConnection.m; sourceTree = "<group>"; };
+		2A51D723155D2A6F00341E5F /* RLConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLConnectionManager.h; sourceTree = "<group>"; };
+		2A51D724155D2A6F00341E5F /* RLConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLConnectionManager.m; sourceTree = "<group>"; };
+		2A51D726155D2A6F00341E5F /* RLFIFOQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLFIFOQueue.h; sourceTree = "<group>"; };
+		2A51D727155D2A6F00341E5F /* RLFIFOQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLFIFOQueue.m; sourceTree = "<group>"; };
+		2A51D728155D2A6F00341E5F /* RLFIFOQueueTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLFIFOQueueTestCase.m; sourceTree = "<group>"; };
+		2A51D72C155D2A6F00341E5F /* RLLIFOQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLLIFOQueue.h; sourceTree = "<group>"; };
+		2A51D72D155D2A6F00341E5F /* RLLIFOQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLLIFOQueue.m; sourceTree = "<group>"; };
+		2A51D72E155D2A6F00341E5F /* RLLIFOQueueTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLLIFOQueueTestCase.m; sourceTree = "<group>"; };
+		2A51D730155D2A6F00341E5F /* RLRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRequestManager.h; sourceTree = "<group>"; };
+		2A51D731155D2A6F00341E5F /* RLRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRequestManager.m; sourceTree = "<group>"; };
+		2A51D732155D2A6F00341E5F /* RLRequestManagerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRequestManagerTestCase.m; sourceTree = "<group>"; };
+		2A51D733155D2A6F00341E5F /* RLRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRequestProtocol.h; sourceTree = "<group>"; };
+		2A51D734155D2A6F00341E5F /* RLRequestQueueProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRequestQueueProtocol.h; sourceTree = "<group>"; };
+		2A51D749155D328000341E5F /* RLTestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTestRequest.h; sourceTree = "<group>"; };
+		2A51D74A155D328000341E5F /* RLTestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTestRequest.m; sourceTree = "<group>"; };
+		2A51D74D155D349000341E5F /* RLNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLNetworkRequest.h; sourceTree = "<group>"; };
+		2A51D74E155D349000341E5F /* RLNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLNetworkRequest.m; sourceTree = "<group>"; };
+		2A9047F215350793002AE3C9 /* AutoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9047F815350794002AE3C9 /* AutoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoTests-Info.plist"; sourceTree = "<group>"; };
+		2A9047FA15350794002AE3C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A9047FF15350794002AE3C9 /* AutoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoTests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A2061E1153504C500CFB1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2061E9153504C500CFB1FB /* UIKit.framework in Frameworks */,
+				2A2061EB153504C500CFB1FB /* Foundation.framework in Frameworks */,
+				2A2061ED153504C500CFB1FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A206204153504C500CFB1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A20620A153504C500CFB1FB /* SenTestingKit.framework in Frameworks */,
+				2A20620B153504C500CFB1FB /* UIKit.framework in Frameworks */,
+				2A20620C153504C500CFB1FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A9047EE15350793002AE3C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9047F315350793002AE3C9 /* SenTestingKit.framework in Frameworks */,
+				2A9047F415350793002AE3C9 /* UIKit.framework in Frameworks */,
+				2A9047F515350793002AE3C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A2061D9153504C500CFB1FB = {
+			isa = PBXGroup;
+			children = (
+				2A2061EE153504C500CFB1FB /* RLNetworkQueues */,
+				2A20620F153504C500CFB1FB /* RLNetworkQueuesTests */,
+				2A9047F615350793002AE3C9 /* AutoTests */,
+				2A2061E7153504C500CFB1FB /* Frameworks */,
+				2A2061E5153504C500CFB1FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A2061E5153504C500CFB1FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A2061E4153504C500CFB1FB /* RLNetworkQueues.app */,
+				2A206208153504C500CFB1FB /* RLNetworkQueuesTests.octest */,
+				2A9047F215350793002AE3C9 /* AutoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A2061E7153504C500CFB1FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A2061E8153504C500CFB1FB /* UIKit.framework */,
+				2A2061EA153504C500CFB1FB /* Foundation.framework */,
+				2A2061EC153504C500CFB1FB /* CoreGraphics.framework */,
+				2A206209153504C500CFB1FB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A2061EE153504C500CFB1FB /* RLNetworkQueues */ = {
+			isa = PBXGroup;
+			children = (
+				2A2061F8153504C500CFB1FB /* RLAppDelegate.h */,
+				2A2061F9153504C500CFB1FB /* RLAppDelegate.m */,
+				2A9047E415350742002AE3C9 /* Model */,
+				2A2061FB153504C500CFB1FB /* Resources */,
+				2A2061FF153504C500CFB1FB /* View */,
+				2A2061EF153504C500CFB1FB /* Supporting Files */,
+			);
+			path = RLNetworkQueues;
+			sourceTree = "<group>";
+		};
+		2A2061EF153504C500CFB1FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A2061F0153504C500CFB1FB /* RLNetworkQueues-Info.plist */,
+				2A2061F1153504C500CFB1FB /* InfoPlist.strings */,
+				2A2061F4153504C500CFB1FB /* main.m */,
+				2A2061F6153504C500CFB1FB /* RLNetworkQueues-Prefix.pch */,
+				2A2061F7153504C500CFB1FB /* PrecompiledGlobalUtilities.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A2061FB153504C500CFB1FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A2061FC153504C500CFB1FB /* MainStoryboard.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A2061FF153504C500CFB1FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A206200153504C500CFB1FB /* RLViewController.h */,
+				2A206201153504C500CFB1FB /* RLViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2A20620F153504C500CFB1FB /* RLNetworkQueuesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A206215153504C500CFB1FB /* RLNetworkQueuesTests.h */,
+				2A206216153504C500CFB1FB /* RLNetworkQueuesTests.m */,
+				2A206210153504C500CFB1FB /* Supporting Files */,
+			);
+			path = RLNetworkQueuesTests;
+			sourceTree = "<group>";
+		};
+		2A206210153504C500CFB1FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A206211153504C500CFB1FB /* RLNetworkQueuesTests-Info.plist */,
+				2A206212153504C500CFB1FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A51D71E155D2A6F00341E5F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D71F155D2A6F00341E5F /* RLNetwork */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2A51D71F155D2A6F00341E5F /* RLNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D733155D2A6F00341E5F /* RLRequestProtocol.h */,
+				2A51D734155D2A6F00341E5F /* RLRequestQueueProtocol.h */,
+				2A51D730155D2A6F00341E5F /* RLRequestManager.h */,
+				2A51D731155D2A6F00341E5F /* RLRequestManager.m */,
+				2A51D732155D2A6F00341E5F /* RLRequestManagerTestCase.m */,
+				2A51D720155D2A6F00341E5F /* Connections */,
+				2A51D725155D2A6F00341E5F /* Queues */,
+				2A51D72F155D2A6F00341E5F /* Requests */,
+			);
+			path = RLNetwork;
+			sourceTree = "<group>";
+		};
+		2A51D720155D2A6F00341E5F /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D721155D2A6F00341E5F /* RLConnection.h */,
+				2A51D722155D2A6F00341E5F /* RLConnection.m */,
+				2A51D723155D2A6F00341E5F /* RLConnectionManager.h */,
+				2A51D724155D2A6F00341E5F /* RLConnectionManager.m */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		2A51D725155D2A6F00341E5F /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D726155D2A6F00341E5F /* RLFIFOQueue.h */,
+				2A51D727155D2A6F00341E5F /* RLFIFOQueue.m */,
+				2A51D728155D2A6F00341E5F /* RLFIFOQueueTestCase.m */,
+				2A51D72C155D2A6F00341E5F /* RLLIFOQueue.h */,
+				2A51D72D155D2A6F00341E5F /* RLLIFOQueue.m */,
+				2A51D72E155D2A6F00341E5F /* RLLIFOQueueTestCase.m */,
+			);
+			path = Queues;
+			sourceTree = "<group>";
+		};
+		2A51D72F155D2A6F00341E5F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D749155D328000341E5F /* RLTestRequest.h */,
+				2A51D74A155D328000341E5F /* RLTestRequest.m */,
+				2A51D74D155D349000341E5F /* RLNetworkRequest.h */,
+				2A51D74E155D349000341E5F /* RLNetworkRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		2A9047E415350742002AE3C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D71E155D2A6F00341E5F /* Network */,
+			);
+			name = Model;
+			path = Source/Model;
+			sourceTree = "<group>";
+		};
+		2A9047F615350793002AE3C9 /* AutoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A9047F715350794002AE3C9 /* Supporting Files */,
+			);
+			path = AutoTests;
+			sourceTree = "<group>";
+		};
+		2A9047F715350794002AE3C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A9047F815350794002AE3C9 /* AutoTests-Info.plist */,
+				2A9047F915350794002AE3C9 /* InfoPlist.strings */,
+				2A9047FF15350794002AE3C9 /* AutoTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A2061E3153504C500CFB1FB /* RLNetworkQueues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A20621A153504C500CFB1FB /* Build configuration list for PBXNativeTarget "RLNetworkQueues" */;
+			buildPhases = (
+				2A2061E0153504C500CFB1FB /* Sources */,
+				2A2061E1153504C500CFB1FB /* Frameworks */,
+				2A2061E2153504C500CFB1FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A90480615350856002AE3C9 /* PBXTargetDependency */,
+			);
+			name = RLNetworkQueues;
+			productName = RLNetworkQueues;
+			productReference = 2A2061E4153504C500CFB1FB /* RLNetworkQueues.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A206207153504C500CFB1FB /* RLNetworkQueuesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A20621D153504C500CFB1FB /* Build configuration list for PBXNativeTarget "RLNetworkQueuesTests" */;
+			buildPhases = (
+				2A206203153504C500CFB1FB /* Sources */,
+				2A206204153504C500CFB1FB /* Frameworks */,
+				2A206205153504C500CFB1FB /* Resources */,
+				2A206206153504C500CFB1FB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A20620E153504C500CFB1FB /* PBXTargetDependency */,
+			);
+			name = RLNetworkQueuesTests;
+			productName = RLNetworkQueuesTests;
+			productReference = 2A206208153504C500CFB1FB /* RLNetworkQueuesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2A9047F115350793002AE3C9 /* AutoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A90480015350794002AE3C9 /* Build configuration list for PBXNativeTarget "AutoTests" */;
+			buildPhases = (
+				2A9047ED15350793002AE3C9 /* Sources */,
+				2A9047EE15350793002AE3C9 /* Frameworks */,
+				2A9047EF15350793002AE3C9 /* Resources */,
+				2A9047F015350793002AE3C9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoTests;
+			productName = AutoTests;
+			productReference = 2A9047F215350793002AE3C9 /* AutoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A2061DB153504C500CFB1FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RL;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2A2061DE153504C500CFB1FB /* Build configuration list for PBXProject "RLNetworkQueues" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A2061D9153504C500CFB1FB;
+			productRefGroup = 2A2061E5153504C500CFB1FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A2061E3153504C500CFB1FB /* RLNetworkQueues */,
+				2A206207153504C500CFB1FB /* RLNetworkQueuesTests */,
+				2A9047F115350793002AE3C9 /* AutoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A2061E2153504C500CFB1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2061F3153504C500CFB1FB /* InfoPlist.strings in Resources */,
+				2A2061FE153504C500CFB1FB /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A206205153504C500CFB1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A206214153504C500CFB1FB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A9047EF15350793002AE3C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9047FB15350794002AE3C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A206206153504C500CFB1FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		2A9047F015350793002AE3C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A2061E0153504C500CFB1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2061F5153504C500CFB1FB /* main.m in Sources */,
+				2A2061FA153504C500CFB1FB /* RLAppDelegate.m in Sources */,
+				2A206202153504C500CFB1FB /* RLViewController.m in Sources */,
+				2A51D735155D2A6F00341E5F /* RLConnection.m in Sources */,
+				2A51D737155D2A6F00341E5F /* RLConnectionManager.m in Sources */,
+				2A51D739155D2A6F00341E5F /* RLFIFOQueue.m in Sources */,
+				2A51D741155D2A6F00341E5F /* RLLIFOQueue.m in Sources */,
+				2A51D745155D2A6F00341E5F /* RLRequestManager.m in Sources */,
+				2A51D74F155D349000341E5F /* RLNetworkRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A206203153504C500CFB1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A206217153504C500CFB1FB /* RLNetworkQueuesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A9047ED15350793002AE3C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A51D736155D2A6F00341E5F /* RLConnection.m in Sources */,
+				2A51D738155D2A6F00341E5F /* RLConnectionManager.m in Sources */,
+				2A51D73A155D2A6F00341E5F /* RLFIFOQueue.m in Sources */,
+				2A51D73C155D2A6F00341E5F /* RLFIFOQueueTestCase.m in Sources */,
+				2A51D742155D2A6F00341E5F /* RLLIFOQueue.m in Sources */,
+				2A51D744155D2A6F00341E5F /* RLLIFOQueueTestCase.m in Sources */,
+				2A51D746155D2A6F00341E5F /* RLRequestManager.m in Sources */,
+				2A51D748155D2A6F00341E5F /* RLRequestManagerTestCase.m in Sources */,
+				2A51D74C155D328000341E5F /* RLTestRequest.m in Sources */,
+				2A51D750155D349000341E5F /* RLNetworkRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A20620E153504C500CFB1FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A2061E3153504C500CFB1FB /* RLNetworkQueues */;
+			targetProxy = 2A20620D153504C500CFB1FB /* PBXContainerItemProxy */;
+		};
+		2A90480615350856002AE3C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A9047F115350793002AE3C9 /* AutoTests */;
+			targetProxy = 2A90480515350856002AE3C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A2061F1153504C500CFB1FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2061F2153504C500CFB1FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A2061FC153504C500CFB1FB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2061FD153504C500CFB1FB /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2A206212153504C500CFB1FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A206213153504C500CFB1FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A9047F915350794002AE3C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A9047FA15350794002AE3C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A206218153504C500CFB1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A206219153504C500CFB1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A20621B153504C500CFB1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RLNetworkQueues/RLNetworkQueues-Prefix.pch";
+				INFOPLIST_FILE = "RLNetworkQueues/RLNetworkQueues-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2A20621C153504C500CFB1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RLNetworkQueues/RLNetworkQueues-Prefix.pch";
+				INFOPLIST_FILE = "RLNetworkQueues/RLNetworkQueues-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2A20621E153504C500CFB1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RLNetworkQueues.app/RLNetworkQueues";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RLNetworkQueues/RLNetworkQueues-Prefix.pch";
+				INFOPLIST_FILE = "RLNetworkQueuesTests/RLNetworkQueuesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2A20621F153504C500CFB1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RLNetworkQueues.app/RLNetworkQueues";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RLNetworkQueues/RLNetworkQueues-Prefix.pch";
+				INFOPLIST_FILE = "RLNetworkQueuesTests/RLNetworkQueuesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		2A90480115350794002AE3C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoTests/AutoTests-Prefix.pch";
+				INFOPLIST_FILE = "AutoTests/AutoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2A90480215350794002AE3C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoTests/AutoTests-Prefix.pch";
+				INFOPLIST_FILE = "AutoTests/AutoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A2061DE153504C500CFB1FB /* Build configuration list for PBXProject "RLNetworkQueues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A206218153504C500CFB1FB /* Debug */,
+				2A206219153504C500CFB1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A20621A153504C500CFB1FB /* Build configuration list for PBXNativeTarget "RLNetworkQueues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A20621B153504C500CFB1FB /* Debug */,
+				2A20621C153504C500CFB1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A20621D153504C500CFB1FB /* Build configuration list for PBXNativeTarget "RLNetworkQueuesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A20621E153504C500CFB1FB /* Debug */,
+				2A20621F153504C500CFB1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A90480015350794002AE3C9 /* Build configuration list for PBXNativeTarget "AutoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A90480115350794002AE3C9 /* Debug */,
+				2A90480215350794002AE3C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A2061DB153504C500CFB1FB /* Project object */;
+}
