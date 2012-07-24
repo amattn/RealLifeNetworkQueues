@@ -78,23 +78,34 @@
 						successHandler:(RLConnectionSuccessHandlerBlockType)successHandlerBlock
 						  errorHandler:(RLConnectionErrorHandlerBlockType)errorHandlerBlock;
 {
-	self.urlRequest = urlRequest;
-	
-	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:self.urlRequest delegate:self];
-
-	if (connection)
-	{
-		self.requestTime = [NSDate date];
-		self.connection = connection;
-		self.receivedData = [NSMutableData data];
-        self.progressHandler = progressHandlerBlock;
-		self.sucesssHandler = successHandlerBlock;
-		self.errorHandler = errorHandlerBlock;
-	}
-	else 
-	{
-		errorHandlerBlock(self.urlRequest, nil, nil);
-	}
+    void (^launchRequest)() = ^{        
+        self.urlRequest = urlRequest;
+        
+        NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:self.urlRequest delegate:self startImmediately:NO];
+        
+        if (connection)
+        {
+            self.requestTime = [NSDate date];
+            self.connection = connection;
+            self.receivedData = [NSMutableData data];
+            self.progressHandler = progressHandlerBlock;
+            self.sucesssHandler = successHandlerBlock;
+            self.errorHandler = errorHandlerBlock;
+            
+            [connection scheduleInRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+            [connection start];
+        }
+        else 
+        {
+            errorHandlerBlock(self.urlRequest, nil, nil);
+        }
+    };
+    
+    if (dispatch_get_main_queue() == dispatch_get_current_queue()) {
+        launchRequest();
+    } else {
+        dispatch_async(dispatch_get_main_queue(), launchRequest);
+    }
 }
 
 - (void)cleanup;
